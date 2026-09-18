@@ -154,6 +154,7 @@ export const fundedProjects = [
 
 // ── Publications ──
 export const publications = [
+  { year: 2026, type: "Journal", title: "BAND: Balanced Acceleration for Nested Dependent-bound Loops on CGRAs", authors: "Christie Sajitha Sajan, Satyajit Das, Kevin J.M. Martin, Phillippe Coussy", venue: "IEEE Embedded Systems Letters", doi: "10.1109/LES/2026/3731211"},
   { year: 2026, type: "Journal", title: "ALISTA: Accelerator using LSH-based maximum inner-product search in transformer attention", authors: "Satyajit Das, et al.", venue: "Integration the VLSI Journal (Elsevier)", doi: "10.1016/j.vlsi.2024.102784" },
   { year: 2026, type: "Conference", title: "GhostWriter: Exploiting GPU-Cache Contention to Steal and Steer Multi-tenant Large-Language-Model Inference", authors: "Ranjit Das, S. Vijayakumar", venue: "Security, Privacy, and Applied Cryptography Engineering (SPACE 2025), LNCS vol. 16406, pp. 134–153, Springer", doi: "10.1007/978-3-031-82435-4_8" },
   { year: 2024, type: "Journal", title: "CREPE: Concurrent Reverse-modulo-scheduling and Placement for CGRAs", authors: "Chilankamol Sunny, Satyajit Das, Kevin Martin, Philippe Coussy", venue: "IEEE Transactions on Reconfigurable Systems (IEEE TRS)", doi: "10.1109/TRS.2024.3411234" },
