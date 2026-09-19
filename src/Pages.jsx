@@ -550,33 +550,163 @@ export function PublicationsPage() {
 export function NewsPage() {
   return (
     <>
-      <PageHeader label="Latest Updates" title="News & Events" subtitle="Stay updated on our latest research milestones, awards, events, and lab announcements." />
-      <section style={{ background: "var(--bg-primary)", padding: "64px 32px" }}>
-        <div style={{ maxWidth: 920, margin: "0 auto", display: "flex", flexDirection: "column", gap: 16 }}>
+      <PageHeader
+        label="Latest Updates"
+        title="News & Events"
+        subtitle="Stay updated on our latest research milestones, awards, events, and lab announcements."
+      />
+
+      <section
+        style={{
+          background: "var(--bg-primary)",
+          padding: "64px 32px"
+        }}
+      >
+        <div
+          style={{
+            maxWidth: 920,
+            margin: "0 auto",
+            display: "flex",
+            flexDirection: "column",
+            gap: 16
+          }}
+        >
           {newsItems.map((item, i) => (
-            <div key={i} style={{ background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: 14, overflow: "hidden" }}>
-              <div style={{ padding: "24px 28px" }}>
-                <div style={{ fontSize: 13, color: "var(--text-faint)", marginBottom: 12 }}>📅 {item.date}</div>
-                <h3 style={{ fontSize: 17, fontWeight: 600, color: "var(--text-primary)", marginBottom: 12, lineHeight: 1.5 }}>{item.title}</h3>
-                <p style={{ fontSize: 14, color: "var(--text-secondary)", lineHeight: 1.8, marginBottom: 16 }}>{item.desc}</p>
-                <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-                  {item.tags.map(t => <Tag key={t}>{t}</Tag>)}
-                </div>
-              </div>
-              {item.youtube && (
-                <div style={{ position: "relative", paddingBottom: "42%", background: "#000" }}>
-                  <iframe src={item.youtube} title={item.title} style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }} allowFullScreen />
+            <div
+              key={i}
+              style={{
+                background: "var(--bg-card)",
+                border: "1px solid var(--border)",
+                borderRadius: 14,
+                overflow: "hidden"
+              }}
+            >
+
+              {/* Poster / News Image */}
+              {item.image && (
+                <div
+                  style={{
+                    width: "100%",
+                    background: "#050b18",
+                    padding: 0
+                  }}
+                >
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    style={{
+                      display: "block",
+                      width: "100%",
+                      height: "auto",
+                      objectFit: "contain"
+                    }}
+                  />
                 </div>
               )}
+
+              {/* News Content */}
+              <div style={{ padding: "24px 28px" }}>
+
+                {/* Date */}
+                <div
+                  style={{
+                    fontSize: 13,
+                    color: "var(--text-faint)",
+                    marginBottom: 8
+                  }}
+                >
+                  📅 {item.date}
+                </div>
+
+                {/* Type */}
+                {item.type && (
+                  <div
+                    style={{
+                      fontSize: 12,
+                      fontWeight: 600,
+                      color: "var(--accent)",
+                      textTransform: "uppercase",
+                      letterSpacing: "0.08em",
+                      marginBottom: 10
+                    }}
+                  >
+                    {item.type}
+                  </div>
+                )}
+
+                {/* Title */}
+                <h3
+                  style={{
+                    fontSize: 17,
+                    fontWeight: 600,
+                    color: "var(--text-primary)",
+                    marginBottom: 12,
+                    lineHeight: 1.5
+                  }}
+                >
+                  {item.title}
+                </h3>
+
+                {/* Description */}
+                <p
+                  style={{
+                    fontSize: 14,
+                    color: "var(--text-secondary)",
+                    lineHeight: 1.8,
+                    marginBottom: 16
+                  }}
+                >
+                  {item.desc}
+                </p>
+
+                {/* Tags */}
+                <div
+                  style={{
+                    display: "flex",
+                    gap: 8,
+                    flexWrap: "wrap"
+                  }}
+                >
+                  {item.tags.map(t => (
+                    <Tag key={t}>{t}</Tag>
+                  ))}
+                </div>
+              </div>
+
+              {/* YouTube Video */}
+              {item.youtube && (
+                <div
+                  style={{
+                    position: "relative",
+                    paddingBottom: "42%",
+                    background: "#000"
+                  }}
+                >
+                  <iframe
+                    src={item.youtube}
+                    title={item.title}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      border: "none"
+                    }}
+                    allowFullScreen
+                  />
+                </div>
+              )}
+
             </div>
           ))}
         </div>
       </section>
+
       <Footer />
     </>
   );
 }
-
 /* ════════════════════ GALLERY PAGE ════════════════════ */
 export function GalleryPage() {
   return (
