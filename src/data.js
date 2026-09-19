@@ -194,6 +194,20 @@ export const infrastructure = [
 
 // ── News ──
 export const newsItems = [
+    {
+    date: "19 September 2026",
+    type: "Course Announcement",
+    title: "NPTEL January 2027 – Foundations of Quantum Computing and Quantum Machine Learning",
+    desc: "NPTEL announces a new 12-week course on Foundations of Quantum Computing and Quantum Machine Learning, instructed by Prof. Satyajit Das and Prof. Satyadhyan Chickerur. The course covers quantum computing foundations, quantum circuits and algorithms, quantum information concepts, and the application of quantum principles to machine learning.",
+    tags: [
+      "NPTEL",
+      "Quantum Computing",
+      "Quantum Machine Learning",
+      "Course",
+      "January 2027"
+    ],
+    image: "/images/news.png"
+  },
   { date: "4 June 2026", type: "Course Update", title: "NPTEL Course Revamp – Advanced Technical Learning Initiative by IIT Guwahati and PRISM Lab", desc: "The NPTEL course instructed by Prof. Satyajit Das, Head of PRISM Lab, IIT Guwahati, has been extensively revamped for the July–October 2026 cycle.", tags: ["NPTEL","Education","Course Update","Research"], youtube: "https://www.youtube.com/embed/VaJSJXoX4cQ" },
   { date: "21 May 2026", type: "Paper Presentation", title: "Paper Presentation – CFP – 23rd ACM International Conference on Computing Frontiers (CF) 2026, Catania, Italy", desc: "Ms. Rajeswari S., PhD student of Prof. John has presented a paper at the CF – 23rd ACM International Conference on Computing Frontiers (CF) 2026, Catania, Italy.", tags: ["Presentation","Publications","ACM","Research Excellence"] },
   { date: "9 May 2026", type: "Student Achievement", title: "IEEE Luminary of Discovery (Best Research) Award 2026", desc: "Our lab Project Intern, Mr. Dhanvanth Kumar Gude, has received the IEEE Luminary of Discovery (Best Research) Award 2026 from Chandigarh University for his outstanding research excellence.", tags: ["Award","Student Achievement","IEEE","Research Excellence"] },
