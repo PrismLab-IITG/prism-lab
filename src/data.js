@@ -72,6 +72,7 @@ export const alumni = [
     name: "Dhanvanth Kumar Gude",
     role: "Project Intern",
     period: "Sep 2025 - Jun 2026",
+    homeInstitution: "Chandigarh University",
     topic: "Security and Privacy in IoT Environments",
     email: "gudekumar@rnd.iitg.ac.in",
     photo: "/images/Dhanvanth.jpg",
