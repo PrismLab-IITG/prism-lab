@@ -289,17 +289,33 @@ export function HomePage() {
             </div>
             <Link to="/news" style={{ fontSize: 14, color: "var(--text-muted)", border: "1px solid var(--border)", borderRadius: 7, padding: "7px 15px", textDecoration: "none" }}>All News →</Link>
           </div>
-          {newsItems[0].youtube && (
+
+          {newsItems[0] && (
             <div style={{ marginBottom: 18, background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: 12, overflow: "hidden" }}>
-              <div style={{ padding: "14px 20px", borderBottom: "1px solid var(--border-light)", display: "flex", alignItems: "center", gap: 10 }}>
-                <Cpu size={13} color="var(--text-muted)" />
-                <span style={{ fontSize: 13, color: "var(--text-muted)" }}>NPTEL Course Review – Advanced Technical Learning Initiative by IIT Guwahati and PRISM Lab</span>
-              </div>
-              <div style={{ position: "relative", paddingBottom: "38%" }}>
-                <iframe src={newsItems[0].youtube} title="PRISM Lab" style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }} allowFullScreen />
+              {newsItems[0].image && (
+                <div style={{ width: "100%", background: "#050b18" }}>
+                  <img
+                    src={newsItems[0].image}
+                    alt={newsItems[0].title}
+                    style={{ display: "block", width: "100%", height: "auto", objectFit: "contain" }}
+                  />
+                </div>
+              )}
+              <div style={{ padding: "20px 24px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
+                  <Cpu size={13} color="var(--text-muted)" />
+                  <span style={{ fontSize: 11, fontWeight: 600, color: "var(--accent)", textTransform: "uppercase", letterSpacing: "0.08em" }}>{newsItems[0].type}</span>
+                  <span style={{ fontSize: 12, color: "var(--text-faint)" }}>• {newsItems[0].date}</span>
+                </div>
+                <p style={{ fontSize: 17, fontWeight: 600, color: "var(--text-primary)", marginBottom: 10, lineHeight: 1.5 }}>{newsItems[0].title}</p>
+                <p style={{ fontSize: 14, color: "var(--text-secondary)", lineHeight: 1.7, marginBottom: 14 }}>{newsItems[0].desc}</p>
+                <div style={{ display: "flex", gap: 7, flexWrap: "wrap" }}>
+                  {newsItems[0].tags.map(t => <Tag key={t}>{t}</Tag>)}
+                </div>
               </div>
             </div>
           )}
+
           {newsItems.slice(1, 3).map((item, i) => (
             <div key={i} style={{ background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: 12, padding: "20px 24px", display: "flex", gap: 20, marginBottom: 12 }}>
               <div style={{ flexShrink: 0, minWidth: 32 }}>
