@@ -208,7 +208,7 @@ export const newsItems = [
     "Bug Bounty",
     "Student Achievement"
   ],
-    image: "/images/poster.jpg"
+    image: "/images/poster.pdf"
   },
   {
     date: "19 September 2026",
