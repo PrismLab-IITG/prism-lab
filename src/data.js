@@ -194,22 +194,7 @@ export const infrastructure = [
 
 // ── News ──
 export const newsItems = [
-  {
-  date: "2026",
-  type: "Achievement",
-  title: "Team AATeAm Wins East Zone of BOSS OS Bug Bounty Programme 2026",
-  desc: "A proud moment for PRISM Lab, IIT Guwahati! Team AATeAm from PRISM Lab, Department of Computer Science and Engineering, IIT Guwahati, has emerged as the East Zone Winner of the BOSS OS Bug Bounty Programme 2026.",
-  image: "/assets/boss-os-bug-bounty-2026.jpg",
-  tags: [
-    "PRISM Lab",
-    "IIT Guwahati",
-    "Cybersecurity",
-    "BOSS OS",
-    "Bug Bounty",
-    "Student Achievement"
-  ],
-    image: "/images/poster.pdf"
-  },
+  { date: "23 September 2026", type: "Achievement", title: "Team AATeAm Wins East Zone of BOSS OS Bug Bounty Programme 2026", desc: "A proud moment for PRISM Lab, IIT Guwahati! Team AATeAm from PRISM Lab, Department of Computer Science and Engineering, IIT Guwahati, has emerged as the East Zone Winner of the BOSS OS Bug Bounty Programme 2026.", tags: ["Cybersecurity", "CDAC India", "BOSS OS", "Bug Bounty", "Student Achievement"]},
   {
     date: "19 September 2026",
     type: "Course Announcement",
