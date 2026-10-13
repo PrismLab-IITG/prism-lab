@@ -15,7 +15,7 @@ export const phd = [
     name: "Abhishek Neogi",
     role: "PhD Scholar",
     batch: "PhD 2nd Year",
-    topic: "Coarse-Grained Reconfigurable Array",
+    //topic: "Coarse-Grained Reconfigurable Array",
     email: "a.neogi@iitg.ac.in",
     photo: "/images/Abhishek.jpg",
   },
