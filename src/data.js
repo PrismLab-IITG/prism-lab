@@ -23,16 +23,25 @@ export const phd = [
 
 export const projectStaff = [
   { 
+    name: "Adarsh Prakash", 
+    role: "Project Associate", 
+    email: "adarsh789@rnd.iitg.ac.in", 
+    photo: "/images/adarsh.jpg",
+  },
+  { 
     name: "Ankit Chakraborty", 
     role: "Project Associate", 
     email: "ankitchakraborty@rnd.iitg.ac.in", 
     photo: "/images/ankit.jpg", 
   },
-  { 
-    name: "Adarsh Prakash", 
-    role: "Project Associate", 
-    email: "adarsh789@rnd.iitg.ac.in", 
-    photo: "/images/adarsh.jpg",
+  {
+    name: "Dhanvanth Kumar Gude",
+    role: "Assistant Project Engineer",
+    affiliation: "Associated with PRISM Lab and ISEA Project Phase III",
+    prev: "Ex-Project Intern (Sept 2025 – May 2026) @prismlab",
+    topic: "Security and Privacy in IoT Environments",
+    email: "gudekumar@rnd.iitg.ac.in",
+    photo: "/images/Dhanvanth.jpg",
   },
 ];
 
@@ -68,15 +77,6 @@ export const interns = [
 ];
 
 export const alumni = [
-  {
-    name: "Dhanvanth Kumar Gude",
-    role: "Project Intern",
-    period: "Sep 2025 - Jun 2026",
-    homeInstitution: "Chandigarh University",
-    topic: "Security and Privacy in IoT Environments",
-    email: "gudedhanvanthkumar05@gmail.com",
-    photo: "/images/Dhanvanth.jpg",
-  },
   {
     name: "Ananya Krishna Vishwas",
     role: "Project Intern",
