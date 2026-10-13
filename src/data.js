@@ -39,7 +39,7 @@ export const projectStaff = [
     role: "Assistant Project Engineer",
     affiliation: "Associated with PRISM Lab and ISEA Project Phase III",
     prev: "Ex-Project Intern (Sept 2025 – May 2026) @prismlab",
-    topic: "Security and Privacy in IoT Environments",
+    topic: "Research Topic: Security and Privacy in IoT Environments",
     email: "gudekumar@rnd.iitg.ac.in",
     photo: "/images/Dhanvanth.jpg",
   },
